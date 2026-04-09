@@ -1,0 +1,34 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "XX:XX:XX:XX:XX:XX",
+    "port": 51628,
+    "pin": "XXX-XX-XXX"
+  },
+  "accessories": [],
+  "platforms": [
+    {
+      "platform": "homebridge-config-ui-x.config",
+      "name": "Config",
+      "port": 8581,
+      "auth": "form",
+      "theme": "auto"
+    },
+    {
+      "platform": "TuyaPlatform",
+      "name": "TuyaPlatform",
+      "options": {
+        "accessId": "YOUR_TUYA_CLIENT_ID",
+        "accessKey": "YOUR_TUYA_ACCESS_SECRET",
+        "username": "YOUR_TUYA_EMAIL",
+        "password": "YOUR_TUYA_APP_PASSWORD",
+        "endpoint": "https://openapi.tuyaeu.com",
+        "countryCode": "44",
+        "appSchema": "tuyaSmart",
+        "projectType": "2",
+        "debug": true
+      }
+    }
+  ]
+}
+

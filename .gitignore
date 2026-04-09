@@ -1,0 +1,6 @@
+config.json
+.homebridge/persist/
+.homebridge/accessories/
+.homebridge/cache/
+.DS_Store
+*.env
